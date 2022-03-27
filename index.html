@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-A-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test_index</title>
+
+    <link rel="stylesheet" href="styles/styles_test.css">
+    <link rel="stylesheet" type="text/css" href="styles/reset_css.css">
+   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Playfair+Display:wght@700&family=Raleway&family=Roboto:wght@300&display=swap" rel="stylesheet">
+  </head>
+  
+  <body>
+    
+    <section class="first-screen__background">
+      
+      <div class="container">  
+        <div class="first-screen__header" id="start"> <!-- FLEX -->
+          <span class="logo_HouseVOP"> <!-- FLEX -->
+            <a href="index_test.html">
+            <img src="IMG/HouseVOP.svg" alt="HouseVOP">
+            <p class="logo_HouseVOP_text2"><h4>жилой комплекс</h4></p>
+          </a>
+          </span>
+           <nav class="first-screen_navmenu">
+            <ul><!-- FLEX -->
+              <li><a href=""><h4>О комплексе</h4></a></li>
+              <li><a href=""><h4>Район</h4></a></li>
+              <li><a href=""><h4>Каталог квартир</h4></a></li>
+              <li><a href=""><h4>Ипотека</h4></a></li>
+              <li><a href=""><h4>Контакты</h4></a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+  
+      <div class="first-screen_pannel"><!-- FLEX -->
+        <h1>Жилой комплекс в историческом центре</h1>
+        <img class="first-screen_pannel__Jerry" src="IMG/mouse.svg" alt="Jerry">
+        <div class="first-screen_pannel__contacts"><!-- FLEX -->
+          <div>
+            <img src="IMG/placeholder.svg" alt="Адрес">
+            <a href="#address_map"><h4>Наб. реки Фонтанки 10-15</h4></a>
+          </div>
+          <div>
+            <img src="IMG/phone-call.svg" alt="Телефон">
+            <a href="tel:+78121234567"><h4>Телефон: 8 (812) 123-45-67</h4></a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="second-screen">
+        <div class="second-screen_features-container">
+          <div class="second-screen_features">
+            <div>
+              <img src="IMG\bench.svg" alt="Парки и скверы">
+              <h3>Рядом исторические парки и скверы</h3>
+            </div>
+            <div>
+              <img src="IMG\building.svg" alt="Обустроенный">
+              <h3>Полностью обустроенный</h3>
+            </div>
+            <div>
+              <img src="IMG\fountain.svg" alt="Фонтанки">
+              <h3>10 фонтанов на территории</h3>
+            </div>
+           <div>
+             <img src="IMG\bicycle.svg" alt="Вело">
+             <h3>6 км велодорожек</h3>
+           </div>
+         </div>
+       </div>
+       <div class="second-screen_flats-show">     
+        <h2 class="block-headline">Наши квартиры</h2>
+          <ul class="second-screen_flats-show__img">
+            <li><img src="IMG\foto1.png"><h4> Лофт 3-го этажа </h4></li>
+            <li><img src="IMG\foto2.png"><h4> Лофт 2-го этажа </h4></li>
+            <li><img src="IMG\foto1.png"><h4> Лофт 3-го этажа </h4></li>
+            <li><img src="IMG\foto2.png"><h4> Лофт 2-го этажа </h4></li>
+          </ul>
+       </div>
+       
+      </div>
+      <div class="third-screen">
+        <div class="container">
+          <h2 class="block-headline">Хотите посмотреть?</h2>
+          <div class="third-screen__inner-container">
+            <div class="third-screen__text">
+              <h4>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов.
+              </h4>
+            </div>
+            <form class="third-screen__form" action="">
+              <label class="third-screen__form-label">
+                <input class='input' type="text" name="userName" placeholder="Ваше имя">
+              </label>
+              <label class="third-screen__form-label">
+                <input class='input' type="text" name="userPhone" placeholder="Ваш телефон">
+              </label>
+              <div class="third-screen__text" >
+                <h4>*Мы никому не передаем ваши данные. И&nbspне&nbspсохраняем ваш номер в базу.</h4>
+              </div>
+              <div class="third-screen__form-btn">
+                <button class="btn" type="submit"><h5>Посмотреть район</h5></button>
+              </div>
+            </form>
+        </div>
+      </div>
+    </div>
+     <!------------  Блок "Видео"   ------------>
+    <section class="video">
+      <div class="video__background"></div>
+      <video src="" poster="IMG\Rectangle 3.jpg"></video>
+      <button onclick=""><img src="IMG\play-button.svg"></button>
+    </section>
+    
+     <!------------  Блок "Карта"   ------------>
+    <div class="map" id="address_map">
+      <div class="container">
+        <h2 class="block-headline">Район на карте</h2>
+        <div class="map__inner-container">
+          <div style="position:relative;overflow:hidden;">
+            <a href="https://yandex.ru/maps/2/saint-petersburg/?utm_medium=mapframe&utm_source=maps">
+            </a>
+            <a href="https://yandex.ru/maps/2/saint-petersburg/?ll=30.338928%2C59.943544&utm_medium=mapframe&utm_source=maps&z=16" >
+            </a>
+            <iframe src="https://yandex.ru/map-widget/v1/-/CCUBBMBypC" width="1110px" height="358px" frameborder="1" allowfullscreen="true" >
+            </iframe>
+          </div>
+        </div>  
+      </div>
+    </div>
+
+    <!------------  Блок "Есть вопросы?"   ------------>
+    <div class="question">
+        <div class="container">
+          <h2 class="block-headline">Есть вопросы?</h2>
+          <div class="question__inner-container">
+            <div class="question__text">
+              <h4>*Мы никому не передаем ваши данные. И&nbspне&nbspсохраняем ваш номер в базу.</h4>
+            </div>
+            <label class="questionn__form-label">
+              <input class='input' type="text" name="userName" placeholder="Ваше имя">
+            </label>
+            <label class="question__form-label">
+              <input class='input' type="text" name="userPhone" placeholder="Ваш телефон">
+            </label>
+            <div class="question__form-btn">
+                <button class="btn" type="submit"><h5>Посмотреть район</h5></button>
+            </div>            
+          </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+      <div class="footer-container"><!-- FLEX -->
+        <div class="footer__inner-container">
+         <span class="logo_HouseVOP">
+            <a href="#start">
+              <img src="IMG/HouseVOP.svg" alt="HouseVOP">
+              <p class="logo_HouseVOP_text2"><h4>ЖИЛОЙ КОМПЛЕКС</h4></p>
+            </a>
+          </span>
+        </div>
+        <div class="footer__inner-container">
+          <nav class="footer__navmenu">
+            <ul>
+              <li><a href="#"><h4>О комплексе</h4></a></li>
+              <li><a href="#"><h4>Район</h4></a></li>
+              <li><a href="#"><h4>Каталог квартир</h4></a></li>
+              <li><a href="#"><h4>Ипотека</h4></a></li>
+              <li><a href="#"><h4>Контакты</h4></a></li>
+            </ul>
+          </nav>  
+        </div>
+        <div class="footer__inner-container">
+          <nav class="footer__navmenu">
+            <ul>
+              <li><a href="#"><h4>О комплексе</h4></a></li>
+              <li><a href="#"><h4>Район</h4></a></li>
+              <li><a href="#"><h4>Каталог квартир</h4></a></li>
+              <li><a href="#"><h4>Ипотека</h4></a></li>
+              <li><a href="#"><h4>Контакты</h4></a></li>
+            </ul>
+          </nav>  
+        </div>
+        <div class="footer__inner-container">
+          <address>
+            <h4>Адрес: Наб. реки Фонтанки 10-15</h4>
+            <a href="tel:+78121234567"><h4>Телефон: 8 (812) 123-45-67</h4></a>
+            <h4>Отдел продаж: 10:00 - 20:00</h4>
+            <a href="mailto:vip@housevip.ru"><h5>E-mail: vip@housevip.ru</h5></a>
+          </address>
+          <div class="footer__social-icons"><!-- FLEX -->
+            <button type="button"><a href="https://ok.ru"></a></a></button>
+            <button type="button"><a href="https://vk.ru"></a></button>
+            <button type="button"><a href="https://www.tiktok.com/ru-RU"></a></button>
+            <button type="button"><a href="https://telegramm.com"></a></button>
+          </div>
+        </div>
+      </div>
+    </footer>    
+  </section>
+  </body>
