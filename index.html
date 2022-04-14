@@ -4,9 +4,10 @@
     <meta charset="utf-8">
     <meta http-equiv="X-A-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Test_index</title>
-
-    <link rel="stylesheet" href="styles/styles_test.css">
+    <meta name="description" content="Недвижимость в историческом центре Санкт-Петербурга. Набережная реки Фонтанка.Цены от застройщика. Спешите купить без посредников!">
+    <meta name="keywords" content="планировки лофт loft">
+    <title>Relocation flats</title>
+    <link rel="stylesheet" type="text/css" href="styles/styles.css">
     <link rel="stylesheet" type="text/css" href="styles/reset_css.css">
    
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,44 +16,45 @@
   </head>
   
   <body>
-    
-    <section class="first-screen__background">
-      
-      <div class="container">  
-        <div class="first-screen__header" id="start"> <!-- FLEX -->
-          <span class="logo_HouseVOP"> <!-- FLEX -->
-            <a href="https://gennadii-muz.github.io/Maket1/">
+    <section>
+      <!--  -->
+      <header class="first-screen__header"><!-- FLEX -->
+        <span class="logo_HouseVOP"> <!-- FLEX -->
+          <a href="index.html">
             <img src="IMG/HouseVOP.svg" alt="HouseVOP">
-            <p class="logo_HouseVOP_text2"><h4>жилой комплекс</h4></p>
+              <p class="logo_HouseVOP_text2"><h4>жилой комплекс</h4></p>
           </a>
-          </span>
-           <nav class="first-screen_navmenu">
-            <ul><!-- FLEX -->
-              <li><a href=""><h4>О комплексе</h4></a></li>
-              <li><a href=""><h4>Район</h4></a></li>
-              <li><a href=""><h4>Каталог квартир</h4></a></li>
-              <li><a href=""><h4>Ипотека</h4></a></li>
-              <li><a href=""><h4>Контакты</h4></a></li>
-            </ul>
-          </nav>
-        </div>
-      </div>
-  
-      <div class="first-screen_pannel"><!-- FLEX -->
-        <h1>Жилой комплекс в историческом центре</h1>
-        <img class="first-screen_pannel__Jerry" src="IMG/mouse.svg" alt="Jerry">
-        <div class="first-screen_pannel__contacts"><!-- FLEX -->
-          <div>
-            <img src="IMG/placeholder.svg" alt="Адрес">
-            <a href="#address_map"><h4>Наб. реки Фонтанки 10-15</h4></a>
-          </div>
-          <div>
-            <img src="IMG/phone-call.svg" alt="Телефон">
-            <a href="tel:+78121234567"><h4>Телефон: 8 (812) 123-45-67</h4></a>
-          </div>
-        </div>
-      </div>
+          <button id="btnmenu" class="btn first-screen__btn" type="button">Скрыть меню</button>
+        </span>
+        <nav class="first-screen_navmenu first-screen_navmenu__show">
+          <ul><!-- FLEX -->
+            <li><a href=""><h4>О комплексе</h4></a></li>
+            <li><a href=""><h4>Район</h4></a></li>
+            <li><a href=""><h4>Каталог квартир</h4></a></li>
+            <li><a href=""><h4>Ипотека</h4></a></li>
+            <li><a href=""><h4>Контакты</h4></a></li>
+          </ul>
+        </nav>
+      </header>
       
+      <div class="first-screen__background">
+        <!-- <button id="btnmenu" class="btn first-screen__btn" type="button">Скрыть меню</button> -->
+        <div class="first-screen__pannel">
+          <h1>Жилой комплекс в историческом центре</h1>
+          <img class="first-screen_pannel__Jerry" src="IMG/mouse.svg" alt="Jerry">
+          <span class="first-screen_pannel__contacts">
+            <div>
+              <img src="IMG/placeholder.svg" alt="Адрес">
+              <a href="#address_map"><h4>Наб. реки Фонтанки 10-15</h4></a>
+            </div>
+            <div>
+              <img src="IMG/phone-call.svg" alt="Телефон">
+              <a href="tel:+78121234567"><h4>Телефон: 8 (812) 123-45-67</h4></a>
+            </div>
+          </span>
+        </div>
+      </div>
+            
       <div class="second-screen">
         <div class="second-screen_features-container">
           <div class="second-screen_features">
@@ -76,12 +78,12 @@
        </div>
        <div class="second-screen_flats-show">     
         <h2 class="block-headline">Наши квартиры</h2>
-          <ul class="second-screen_flats-show__img">
-            <li><img src="IMG\foto1.png"><h4> Лофт 3-го этажа </h4></li>
-            <li><img src="IMG\foto2.png"><h4> Лофт 2-го этажа </h4></li>
-            <li><img src="IMG\foto1.png"><h4> Лофт 3-го этажа </h4></li>
-            <li><img src="IMG\foto2.png"><h4> Лофт 2-го этажа </h4></li>
-          </ul>
+        <ul class="second-screen_flats-show__img">
+          <li><img src="IMG\foto1.png"><h4> Лофт 3-го этажа </h4></li>
+          <li><img src="IMG\foto2.png"><h4> Лофт 2-го этажа </h4></li>
+          <li><img src="IMG\foto1.png"><h4> Лофт 3-го этажа </h4></li>
+          <li><img src="IMG\foto2.png"><h4> Лофт 2-го этажа </h4></li>
+        </ul>
        </div>
        
       </div>
@@ -104,7 +106,7 @@
                 <h4>*Мы никому не передаем ваши данные. И&nbspне&nbspсохраняем ваш номер в базу.</h4>
               </div>
               <div class="third-screen__form-btn">
-                <button class="btn" type="submit"><h5>Посмотреть район</h5></button>
+                <button class="btn" type="button"><h5>Посмотреть район</h5></button>
               </div>
             </form>
         </div>
@@ -114,7 +116,8 @@
     <section class="video">
       <div class="video__background"></div>
       <video src="" poster="IMG\Rectangle 3.jpg"></video>
-      <button onclick=""><img src="IMG\play-button.svg"></button>
+        <button class="play" type="button" onclick=""><img src="IMG\play-button.svg"></button>
+      <!-- <button class="play" type="button" onclick=""></button> -->
     </section>
     
      <!------------  Блок "Карта"   ------------>
@@ -139,23 +142,14 @@
         <div class="container">
           <h2 class="block-headline">Есть вопросы?</h2>
           <div class="question__inner-container">
-            <div class="question__text">
-              <h4>*Мы никому не передаем ваши данные. И&nbspне&nbspсохраняем ваш номер в базу.</h4>
-            </div>
-            <label class="questionn__form-label">
-              <input class='input' type="text" name="userName" placeholder="Ваше имя">
-            </label>
-            <label class="question__form-label">
-              <input class='input' type="text" name="userPhone" placeholder="Ваш телефон">
-            </label>
-            <div class="question__form-btn">
-                <button class="btn" type="submit"><h5>Посмотреть район</h5></button>
-            </div>            
+            <h4>*Мы никому не передаем ваши данные. И&nbspне&nbspсохраняем ваш номер в базу.</h4>
+            <input class='input' type="text" name="userName" placeholder="Ваше имя">
+            <input class='input' type="text" name="userPhone" placeholder="Ваш телефон">
+            <button class="btn" type="button"><h5>Посмотреть район</h5></button>
           </div>
         </div>
     </div>
-    
-    <!------------  Блок Footer   ------------>
+
     <footer class="footer">
       <div class="footer-container"><!-- FLEX -->
         <div class="footer__inner-container">
@@ -205,4 +199,5 @@
       </div>
     </footer>    
   </section>
+  <script type="text/javascript" src="menu.js"></script>
   </body>

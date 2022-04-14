@@ -1,0 +1,863 @@
+@font-face { 
+    font-family: "post-no-bills-jaffna";
+    src: url("Fonts/PostNoBillsJaffna-SemiBold.ttf");
+    src: local('post-no-bills-jaffna'), url("Fonts/PostNoBillsJaffna-SemiBold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Playfair Display";
+    src: url("Fonts/PlayfairDisplay-Bold.ttf");
+    src: local('Playfair Display'), url("Fonts/PlayfairDisplay-Bold.ttf") format("truetype");
+}
+
+@font-face {
+   font-family: "Roboto";
+   	src: url("Fonts/Fonts/Roboto-Light.ttf")
+    src: local("Roboto"), url("Fonts/Roboto-Light.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Raleway";
+    src: url("Fonts/Raleway-Regular.ttf")
+    src: local("Raleway"), url("Fonts/Raleway-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Raleway-Bold";
+    src: url("Fonts/Raleway-Bold.ttf")
+    src: local("Raleway-Bold"), url("Fonts/Raleway-Bold.ttf") format("truetype");  
+}
+
+*{
+	box-sizing: border-box;
+}
+
+/**{
+	outline: 1px solid coral;
+}*/
+
+body{
+	background-color: #242B33;
+}
+
+body h1{
+	font-family: "Playfair Display";
+	text-align: center;
+	font-weight: bold;
+	font-size: 48px;
+	color: #D4C17F;
+	margin:0;
+	}
+
+body h2{
+	font-family: "Playfair Display";
+	color: #D4C17F;
+}
+
+body h3{
+	font-family: "Roboto";
+	font-weight: 300;
+	font-size: 20px;
+	color: #fff;
+}
+
+body h4{
+	font-family: "Raleway";
+	font-weight: normal;
+	font-size: 14px;
+	text-decoration: none;
+	color: #fff;
+	margin: 0;
+	padding: 0;
+}
+
+body h5{
+	font-family: "Raleway-Bold";
+	font-style: normal;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 27px;
+	color: #fff;
+	margin: 0;
+	padding: 0;
+}
+
+body h6{
+	font-family: "post-no-bills-jaffna";
+	font-size: 36px;
+    font-weight: bold;
+    font-style: normal;
+    color: #fff;
+	}
+
+p{
+	margin: 0;
+}
+
+a{
+	text-decoration: none;
+}
+
+li{
+	list-style-type: none;
+	margin: 0;
+}
+
+.logo_HouseVOP h4{
+	font-size: 12px;
+	text-align: center;
+}
+
+
+.input{
+	display: block;
+	width: 100%;
+	max-width: 255px;
+	min-height: 50px;
+	text-align: center;
+	padding: 12 auto;
+	font-size: 14px;
+	line-height: 27px;
+	color: #fff;
+	background-color: rgba(255, 255, 255, .2);
+	border: 0;
+}
+
+.input::placeholder{
+	color: #bebebe;
+}
+
+.btn{
+	display: block;
+	width: 100%;
+	max-width: 255px;
+	min-height: 50px;
+	text-align: center;
+	/*padding: 12 auto;*/
+	font-size: 14px;
+	line-height: 27px;
+	color: white;
+	background-color: rgb(212, 193, 127);
+	cursor: pointer;
+}
+
+.block-headline{
+	text-align: left;
+	font-weight: bold;
+	font-size: 36px;
+}
+
+/*-----------------------------  HEADER  ------------------------------------------*/
+
+.first-screen__header{
+	max-width: 1122px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.logo_HouseVOP{
+	width: 134px;
+	display: flex;
+	flex-direction: column;
+	margin: 0;
+	position: relative;
+}
+
+/*------------------ HouseVOP - h6  -------------------------------*/
+.logo_HouseVOP_text1{
+	margin: auto;
+	font-size: 16px;
+	font-weight: 600;
+	color: white;
+}
+
+/*------------------  ЖИЛОЙ КОМПЛЕКС - h4  --------------------------*/
+.logo_HouseVOP_text2{
+	text-align: center;
+	margin-top: 5px;
+	text-transform: uppercase;
+	font-size: 12px;
+}
+
+/*------------------  Меню HEADER  ----------------------------*/
+
+.first-screen_navmenu ul{
+	display: flex;
+	/*align-items: center;*/
+	padding-: 0;
+	list-style-type: none;
+	position: relative;
+}
+
+.first-screen_navmenu ul li {
+	margin-right: 20px;
+	margin-left: 20px;
+	list-style-type: none;
+	color: white;
+}
+
+.first-screen_navmenu ul li:last-child {
+	margin-right: 0;
+}
+/*---------- Header :hover ----------*/
+.first-screen_navmenu  ul li:hover a h4{
+	color:  yellow;
+	transform: scale(1.8);
+	/*opacity: 0;*/
+	transition: 1s;
+}
+.first-screen_navmenu ul li:not(:hover) a h4{
+	color:  #fff;
+	/*opacity: 1;*/
+	transition: 1s;
+}
+
+.first-screen_navmenu ul li:nth-child(4):hover a h4{
+	opacity: 0;
+	transition: 1s;
+}
+
+.first-screen_navmenu ul li:nth-child(4):not(:hover) a h4{
+	opacity: 1;
+	transition: 1s;
+}
+
+/*---------- Header <button> hide/show menu ----------*/
+.first-screen_navmenu__hide{
+	transform: scale(2);
+	opacity: 0;
+	transition: 2s;
+}
+.first-screen_navmenu__show{
+	opacity: 1;
+	transition: 2s;
+}
+
+
+.first-screen_pannel__contacts{
+	margin: 0 auto;
+}
+
+.first-screen_navmenu ul li:hover a {
+	text-decoration: underline solid yellow;
+}
+
+
+
+/* Поведение:
+появление подменю при наведении на вышестоящий пункт меню */
+/*.first-screen_menu__link:hover + .first-screen_inner-menu__item*/
+.first-screen_menu__item:hover .first-screen_inner-menu__item
+{
+	display: block;
+}
+
+.first-screen_menu__link--active,
+.first-screen_menu__link:hover,
+.first-screen_menu__link:focus{
+	color: #ffb800;
+}
+
+.first-screen_menu__link:focus{
+	outline: 0;
+}
+
+.first-screen__btn{
+	position: absolute;
+	top: 0;
+	left: 190px;
+	width: 120px;
+}
+/*------------------------------- ПЕРВЫЙ БЛОК  ----------------------------------*/
+
+/*------------------------- background первого блока ----------------------------*/
+.first-screen__background{
+	max-width: 1920px;
+	max-height: 840px;
+	margin: auto;
+	margin-top: -50px;
+	margin-bottom: 120px;
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+	align-items: center;
+	background: linear-gradient(180deg, #242B33 11.98%, rgba(45,52,60,0.38) 51.04%, #242B33 92.19%), url("../IMG/Rectangle.png") no-repeat;
+}
+
+/*------------------------- Первый экран.  Панель.  ---------------*/
+.first-screen__pannel{
+	max-width: 606px;
+	max-height: 470px;
+	margin: auto;
+	margin-top: 296px;
+	align-items: center;
+}
+
+/*------------------------- Первый экран.  Панель.  Надпись.-------------*/
+.first-screen__pannel h1 {
+	margin-bottom: 80px;
+}
+
+/*------------------------- Первый экран.  Панель.  Mouse.-------------*/
+
+.first-screen_pannel__Jerry{
+	min-width: 40px;
+	min-height: 40px;
+	margin: auto;
+	margin-bottom: 150px;
+}
+
+.first-screen_pannel__Jerry:hover{
+	cursor: pointer;
+}
+
+/*--------- perspectively:  Jerry -> <button> & play ----------*/
+.first-screen_pannel__Jerry.active:before {
+  content: 'click me'
+}
+
+.first-screen_pannel__Jerry:not(.active):after {
+  content: 'click again'
+}
+
+/*------------------------- Первый экран.  Панель.  Контакты.-------------*/
+
+.first-screen_pannel__contacts{
+	display: flex;
+	justify-content: flex-start;
+}
+
+.first-screen_pannel__contacts div{
+	display: flex;
+	justify-content: flex-start;
+}
+
+.first-screen_pannel__contacts div:first-child h4 {
+	margin-right: 102px;
+}
+
+.first-screen_pannel__contacts div img{
+	padding-right: 15px;
+}
+
+
+/*-------------------------  Второй экран.  Панель иконок (features).----------*/
+.second-screen_features-container{
+	max-width: 794px;
+	margin: 0 auto 120px;
+}
+
+.second-screen_features{
+	display: flex;
+	justify-content: space-between;
+	flex-flow: row wrap;
+}
+
+.second-screen_features div{
+	text-align: center;
+	/*flex-basis: 24.5%;*/
+	width: 193px;
+}
+
+.second-screen_features div:last-child{
+	width: 124px;
+	/*flex-basis: 17%;*/
+	/*height: 100%;*/
+}
+
+.second-screen_features img{
+	width: 80px;
+	/*width: 60%;*/
+	margin: 0 auto;
+}
+
+.second-screen_features div h3{
+	margin: 0;
+}
+
+/*-------------------  Второй экран.  Фото квартир.----------------*/
+
+/* --  Контейнер второго экрана. Фото и заголовка -- */
+.second-screen_flats-show{
+	max-width: 1100px;
+	margin: 0 auto;
+	padding: 0;
+	position: relative;
+}
+
+/*-- Контейнер второго экрана. Фото. --*/
+.second-screen_flats-show__img {
+	display: flex;
+	flex-flow: row wrap;
+	padding: 0;
+	margin: 0 auto;
+	flex-basis: 100%;
+}
+
+/*-- Позиционирование Заголовков h2 --*/
+.second-screen .second-screen_flats-show h2{
+	margin: 0;
+}
+
+/*-- Размеры картинок и привязка для подписей --*/
+.second-screen_flats-show__img li{
+	width: 48.5%;
+	margin: 0;
+	padding: 0;
+	position: relative;
+}
+
+.second-screen_flats-show__img li:nth-child(1),
+.second-screen_flats-show__img li:nth-child(2){
+	margin-top: 100px;
+	margin-bottom: 30px;
+}
+
+.second-screen_flats-show__img li:nth-child(odd){
+	margin-right: 30px;
+}
+
+.second-screen_flats-show__img li img{
+	width: 100%;
+}
+
+
+.second-screen_flats-show__img li h4{
+	position: absolute;
+	left:  50px;
+	bottom: 50px;
+	font-size: 24px;
+}
+
+/*------------------------- Третий экран. background------------------------*/
+.third-screen{
+	background: linear-gradient(100deg, #242B33 10.42%, rgba(36, 43, 51, 0) 50.52%, #242B33 90.1%),
+				linear-gradient(0deg, rgba(36, 43, 51, 0.9),rgba(36, 43, 51, 0.9) ),
+				url("../IMG/Rectangle_original.jpg"),#c4c4c4;
+	background-repeat: no-repeat;
+	padding-top: 130px;
+	padding-bottom: 170px;
+	color: #fff;
+}
+/*--------------------------- Третий экран. ----------------------*/
+.third-screen .container{
+	max-width: 1110px;
+	margin: auto;
+}
+
+/*--------- Третий экран.  Позиционирование заголовка блока ---------*/
+.third-screen .container h2.block-headline{
+	margin-bottom: 29px;	
+}
+
+.third-screen__inner-container{
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+
+div.third-screen__text {
+	flex-basis: 50%;
+	padding-right: 15px;
+	margin: auto;
+	text-align: left;
+}
+
+/*--------- Третий экран.  Текст "рыба" ---------*/
+.third-screen__inner-container > .third-screen__text{
+	line-height: 24px;
+	font-size: 16px;
+}
+
+/*--------- Третий экран.  Текст в форме ---------*/
+
+form.third-screen__form div.third-screen__text{
+	text-align: center;
+	padding: 0;
+}
+form.third-screen__form div.third-screen__text h4{
+	font-size: 13px;
+	color: #e7e7e7;
+}
+
+/*--------- Третий экран.  Позиционирование формы ---------*/
+.third-screen__form{
+	flex-basis: 50%;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	align-items: flex-start;
+	padding-left: 15px;
+}
+
+.third-screen__form > *{
+	flex-basis: 50%;
+	padding-left: 15px;
+	margin-bottom: 10px;
+	}
+	
+.third-screen__form > *:nth-child(2n){
+	padding-left: 15px;
+}
+.third-screen__form > *:nth-child(2n+1){
+	padding-right: 15px;
+}
+.third-screen__form-btn{
+	margin-top: 25px;
+}
+
+/*----------------  Третий экран.  Видео   ----------------  */
+.video{
+	max-width: 721px;
+	height: 652px;
+	margin: 0 auto;
+	position: relative;
+	/*border: 1px solid white;*/
+	margin-bottom: 180px;
+}
+
+.video__background{
+	position: absolute;
+	top: 1px;
+	left: 1px;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(0deg, rgba(36, 43, 51, 0.8), rgba(36, 43, 51, 0.8)), url("../IMG/Rectangle 3.jpg"), #626262;
+	border: 1px solid red;
+	z-index: 1;
+}
+
+video {
+	position: absolute;
+	max-width: 100%;
+	max-height: 100%;
+	top: 0;
+	left: 0;
+	z-index: 0;
+	background: url("../IMG/play-button.svg") no-repeat center center;
+}	
+
+.video img{
+	position: absolute;
+	top: 45%;
+	left: 45%;
+	z-index: 2;
+}
+
+/*.video img:hover {
+	cursor: pointer;
+}
+*/
+button.play{
+	/*position: absolute;*/
+	width: 20%;
+	height: 20%;
+	text-align: center;
+	align-items: center;
+	background: url("../IMG/play-button.svg") no-repeat center center;
+	border-radius: 0px 50%;
+	margin: 0;
+	padding: 0;
+	z-index: 2;
+}
+button.play:hover{
+	cursor: pointer
+}
+
+/*----------------  Блок "Карта"   ----------------  */
+.map .container{
+	max-width: 1110px;
+	margin: auto;
+	margin: 100px auto 180px;
+}
+.container div.map__inner-container{
+	max-width: 1100px;
+	max-height: 361px;
+	/*width: 1112px;*/
+	/*height: 360px;*/
+	border: 1px solid white;
+}
+
+#address_map .container .block-headline .map__inner-container div{
+	position: relative;
+	overflow: hidden;
+}
+
+#address_map .container .block-headline .map__inner-container div a {
+	color:#eee;
+	font-size:12px;
+	position:absolute;
+}
+
+#address_map .container .block-headline .map__inner-container div a:nth-child(1){
+	top: 0px;
+}
+
+
+#address_map .container .block-headline .map__inner-container div a:nth-child(2){
+	top: 14px;
+}
+
+#address_map .container .block-headline .map__inner-container div iframe{
+	position:relative;
+}
+
+
+/*----------------  Блок "Есть вопросы?"   ----------------  */
+.question {
+	margin-bottom: 180px;
+}
+.question .container{
+	max-width: 1110px;
+	margin: auto;
+	margin-bottom: 50px;
+}
+
+.question__text h4{
+	margin-top: 0;
+	margin-right: 25px;
+}
+
+.question__inner-container{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	text-align: center;
+	padding: 0;
+	margin-top: 50px;
+}
+
+.question div.question__inner-container h4{
+	font-size: 13px;
+	color: #e7e7e7;
+}
+
+.question__inner-container > *{
+	flex-basis: 25%;
+}
+
+.questionn__form-label > *:not(:last-child){
+	margin-right: 35px;
+	}
+
+
+/*----------------  Подвал   ----------------  */
+.footer{
+	width: 100vw;
+	max-width: 1920px;
+	min-height: 272px;
+	max-height: 350px;
+	margin: 0 auto;
+	backdrop-filter: contrast(0.85);
+}
+
+.footer-container{
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	max-width: 1110px;
+	max-height: 272px;
+	margin: 0px auto 60px;
+}
+
+/* отсутп сверху у logo */
+.footer__inner-container .logo_HouseVOP{
+	margin-top: 60px;
+}
+
+/*отсутп сверху у у остальных flex-блоков*/
+.footer-container >*:not(:first-child){
+	margin-top: 72px;
+}
+
+.footer__inner-container{
+	max-width: 250px;
+}
+
+.footer__navmenu ul li:not(:last-child) {
+	margin-bottom: 15px;
+}
+
+.footer__inner-container address * {
+	margin-bottom: 15px;
+	border: none;
+	font-style: normal;
+	
+}
+
+.footer__inner-container address a h5{
+	font-size: 14px;
+	line-height: 16px;
+	font-weight: 400;
+}
+
+.footer__menu-link{
+	margin-right: 20px;
+	margin-left: 20px;
+	margin-bottom: 15px;
+	list-style-type: none;
+	color: white;
+	border: none;
+}
+
+.footer__social-icons{
+	max-width: 200px;
+	min-height: 40px;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+	margin-top: 0px;
+}
+
+.footer__social-icons button{
+	min-width: 40px;
+	min-height: 22px;
+	border: none;
+	margin-right: 20px;
+}
+
+.footer__social-icons button:nth-child(1){
+	height: 30px;
+	margin-right: 15px;
+	background: url("../IMG/odnoklassniki_my.png") no-repeat;
+}
+.footer__social-icons button:nth-child(2){
+	background: url("../IMG/VK.svg") no-repeat;
+}
+.footer__social-icons button:nth-child(3){
+	background: url("../IMG/tiktok_logo_icon_188431.png") no-repeat;
+	height: 35px;
+}
+.footer__social-icons button:nth-child(4){
+	background: url("../IMG/Telegram.png") no-repeat;
+	height: 35px
+}
+.footer__social-icons > *:hover{
+	cursor: pointer;	
+}
+
+@media all and (max-width: 1200px){
+
+	body section h2.block-headline{
+		text-align: center;
+	}
+
+	.first-screen__header{
+		justify-content: space-evenly;
+	}
+
+	.first-screen_navmenu ul {
+		flex-direction: column;
+	}
+
+	.first-screen__header{
+		max-width: auto;
+		margin: 0 auto;
+	}
+
+	.first-screen_navmenu ul {
+		width: auto;
+		margin-left: 0;
+		padding-left: 0;
+	}
+
+	.first-screen__background{
+		margin-top: -110px;
+		margin-bottom: 20px;
+	}
+	
+	.second-screen_features-container{
+		width: auto;
+	}
+	
+	.second-screen_features{
+		display: grid;
+  		grid-template-columns: repeat(auto-fit, minmax(193px,220px));
+		column-gap: 15px;
+  		row-gap: 15px;
+  		margin: 0;
+  		justify-content: space-evenly;
+  		align-content: space-around;
+  		justify-items: center;
+	}
+
+	.second-screen_flats-show__img li{
+		width: 47.5%;
+		height: auto;
+		margin-bottom: 5px;
+	}
+
+	.second-screen_flats-show__img li:nth-child(1),
+	.second-screen_flats-show__img li:nth-child(2){
+		margin-top: 4%;
+	}
+	
+	.second-screen_flats-show__img li img{
+		width: 100%;
+	}
+
+	.third-screen__form{
+		flex-direction: column;
+	}
+
+	div.third-screen__inner-container form.third-screen__form	> *{
+		margin: 0;
+		margin: 15px auto;
+		padding: 0;
+		width: 100%;
+	}
+
+	body > section > div.third-screen > div > div > form > label > input{
+		max-width: 100%;
+	}
+
+	div.third-screen__inner-container form div.third-screen__form-btn{
+		margin: 0;
+		margin: 15px auto;
+		padding: 0;
+		width: 100%;
+	}
+
+	.third-screen__form-label{
+		max-width: 300px;
+	}
+
+	.third-screen__form-label .input{
+		width: 100%;
+	}
+
+	form > div.third-screen__form-btn > button{
+		max-width: 300px;
+		margin: auto;
+	}
+
+	.container div.map__inner-container{
+		width: auto;
+		margin: 0 10px 0 10px;
+	}
+	.question__inner-container {
+		display: block;
+	}
+
+	.question__inner-container > * {
+		max-width: 300px;
+		margin: 15px auto;
+	}
+
+	.question__inner-container .questionn__form-label input.input{
+		width: 100%;
+	}
+}
+
+
+@media all and (max-width: 720px){
+body > section > section.video{
+	margin: 10px 10px 10px 10px;
+    margin-bottom: 50px;
+}
+
