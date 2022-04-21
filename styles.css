@@ -264,28 +264,59 @@ li{
 	outline: 0;
 }
 
-.first-screen__btn{
+.first-screen__btnshow{
 	position: absolute;
 	top: 0;
 	left: 190px;
 	width: 120px;
+	opacity: 1;
+	transition: 2s;
 }
+
+.first-screen__btnhide{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 120px;
+	opacity: 0;
+	transition: 2s;
+}
+
 /*------------------------------- ПЕРВЫЙ БЛОК  ----------------------------------*/
 
 /*------------------------- background первого блока ----------------------------*/
-.first-screen__background{
+div.first-screen__backgroundShow{
+	background: linear-gradient(180deg, #242B33 11.98%, rgba(45, 52, 60, 0.38) 51.04%, #242B33 92.19%), url(../IMG/Rectangle.png);
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);max-width: 1920px;
 	max-width: 1920px;
 	max-height: 840px;
-	margin: auto;
+	max-width: 1920px;
+	max-height: 840px;
 	margin-top: -50px;
 	margin-bottom: 120px;
-	padding: 0;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	text-align: center;
 	align-items: center;
-	background: linear-gradient(180deg, #242B33 11.98%, rgba(45,52,60,0.38) 51.04%, #242B33 92.19%), url("../IMG/Rectangle.png") no-repeat;
+}
+
+ div.first-screen__backgroundHide{
+	max-width: 1920px;
+	max-height: 840px;
+	margin-top: -50px;
+	margin-bottom: 120px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+	align-items: center;
+	background: linear-gradient(180deg, #242B33 4%, rgba(45,52,60,0.08) 14%, #242B33 117%), url("../IMG/Rectangle.png") no-repeat;
+	transition: 2s;
+}
+.first-screen__background__hide2{
+	background: linear-gradient(180deg, #242B33 8%, rgba(45,52,60,0.08) 25%, #242B33 99%), url("../IMG/Rectangle.png") no-repeat;
+	/*transition: 2s;*/
 }
 
 /*------------------------- Первый экран.  Панель.  ---------------*/
@@ -295,12 +326,26 @@ li{
 	margin: auto;
 	margin-top: 296px;
 	align-items: center;
+	position: relative;
 }
 
 /*------------------------- Первый экран.  Панель.  Надпись.-------------*/
 .first-screen__pannel h1 {
-	margin-bottom: 80px;
+	margin-bottom: 350px;
 }
+
+.first-screen__pannel h1.hide{
+	/*font-size: 0;*/
+	opacity: 0;
+	transition: 1s;
+}
+
+.first-screen__pannel h1.show{
+	/*font-size: 48px;*/
+	opacity: 1;
+	transition: 2s;
+}
+
 
 /*------------------------- Первый экран.  Панель.  Mouse.-------------*/
 
@@ -311,19 +356,33 @@ li{
 	margin-bottom: 150px;
 }
 
+.first-screen__Jerry{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	min-width: 40px;
+	min-height: 50px;
+	background: url("../IMG/mouse.svg") no-repeat;
+
+}
+
+/*.first-screen__Jerry:hover{
+	cursor: pointer;
+	content: 'click me'
+}
+*/
 .first-screen_pannel__Jerry:hover{
 	cursor: pointer;
 }
 
-/*--------- perspectively:  Jerry -> <button> & play ----------*/
-.first-screen_pannel__Jerry.active:before {
+/*#btnJerry:active:before {
   content: 'click me'
 }
 
-.first-screen_pannel__Jerry:not(.active):after {
+#btnJerry:not(:active):after {
   content: 'click again'
 }
-
+*/
 /*------------------------- Первый экран.  Панель.  Контакты.-------------*/
 
 .first-screen_pannel__contacts{
@@ -377,6 +436,14 @@ li{
 
 .second-screen_features div h3{
 	margin: 0;
+}
+
+.first-screen_picture__show {
+	transform: scale(2);
+	opacity: 0;
+	transition: 2s;
+	} 
+		
 }
 
 /*-------------------  Второй экран.  Фото квартир.----------------*/
@@ -860,4 +927,3 @@ body > section > section.video{
 	margin: 10px 10px 10px 10px;
     margin-bottom: 50px;
 }
-
