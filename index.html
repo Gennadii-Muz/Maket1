@@ -7,7 +7,7 @@
     <meta name="description" content="Недвижимость в историческом центре Санкт-Петербурга. Набережная реки Фонтанка.Цены от застройщика. Спешите купить без посредников!">
     <meta name="keywords" content="планировки лофт loft">
     <title>Relocation flats</title>
-    <link rel="stylesheet"  href="styles/styles.css">
+    <link rel="stylesheet" type="text/css" href="styles/styles.css">
     <link rel="stylesheet" type="text/css" href="styles/reset_css.css">
    
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -24,7 +24,7 @@
             <img src="IMG/HouseVOP.svg" alt="HouseVOP">
               <p class="logo_HouseVOP_text2"><h4>жилой комплекс</h4></p>
           </a>
-          <button id="btnmenu" class="btn first-screen__btn" type="button">Скрыть меню</button>
+          <button id="btnmenu" class="btn first-screen__btnshow" type="button">Скрыть меню</button>
         </span>
         <nav class="first-screen_navmenu first-screen_navmenu__show">
           <ul><!-- FLEX -->
@@ -36,21 +36,20 @@
           </ul>
         </nav>
       </header>
-      
-      <div class="first-screen__background">
-        <!-- <button id="btnmenu" class="btn first-screen__btn" type="button">Скрыть меню</button> -->
-        <div class="first-screen__pannel">
-          <h1>Жилой комплекс в историческом центре</h1>
-          <img class="first-screen_pannel__Jerry" src="IMG/mouse.svg" alt="Jerry">
+      <div class="first-screen__backgroundShow">
+        <div class="first-screen__pannel js-h1text">
+          <h1 class="show">Жилой комплекс в <br> историческом центре</h1>
           <span class="first-screen_pannel__contacts">
-            <div>
-              <img src="IMG/placeholder.svg" alt="Адрес">
-              <a href="#address_map"><h4>Наб. реки Фонтанки 10-15</h4></a>
+          <div>
+            <img src="IMG/placeholder.svg" alt="Адрес">
+            <a href="#address_map"><h4>Наб. реки Фонтанки 10-15</h4></a>
             </div>
             <div>
-              <img src="IMG/phone-call.svg" alt="Телефон">
-              <a href="tel:+78121234567"><h4>Телефон: 8 (812) 123-45-67</h4></a>
-            </div>
+            <img src="IMG/phone-call.svg" alt="Телефон">
+            <a href="tel:+78121234567"><h4>Телефон: 8 (812) 123-45-67</h4></a>
+            <button id='btnJerry' type='button' aria-pressed='false'>
+              <span class="first-screen__Jerry"></span>
+            </button>
           </span>
         </div>
       </div>
@@ -126,12 +125,12 @@
         <h2 class="block-headline">Район на карте</h2>
         <div class="map__inner-container">
           <div style="position:relative;overflow:hidden;">
-            <a href="https://yandex.ru/maps/2/saint-petersburg/?utm_medium=mapframe&utm_source=maps">
-            </a>
-            <a href="https://yandex.ru/maps/2/saint-petersburg/?ll=30.338928%2C59.943544&utm_medium=mapframe&utm_source=maps&z=16" >
-            </a>
-            <iframe src="https://yandex.ru/map-widget/v1/-/CCUBBMBypC" width="1110px" height="358px" frameborder="1" allowfullscreen="true" >
-            </iframe>
+            <!-- <a href="https://yandex.ru/maps/2/saint-petersburg/?utm_medium=mapframe&utm_source=maps"> -->
+            <!-- </a> -->
+            <!-- <a href="https://yandex.ru/maps/2/saint-petersburg/?ll=30.338928%2C59.943544&utm_medium=mapframe&utm_source=maps&z=16" > -->
+            <!-- </a> -->
+            <!-- <iframe src="https://yandex.ru/map-widget/v1/-/CCUBBMBypC" width="1110px" height="358px" frameborder="1" allowfullscreen="true" > -->
+            <!-- </iframe> -->
           </div>
         </div>  
       </div>
